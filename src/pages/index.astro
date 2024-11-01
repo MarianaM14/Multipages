@@ -1,9 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout title="Welcome to Astro.">
-	
+	<div class="my-custom-class">
+        adsadd
+    </div>
+    <span class="font-myfont italic bg-green-400">HOLA MUNDO CON MI FUENTE ELEGIDA</span>
+
+
+    <Icon name="mynaui:angry-ghost-solid" size="60" class="text-pink-300"/>
+    <Icon name="mdi:progress-upload" size="56" class="text-blue-600" />
 </Layout>
 
+<style>
+ .my-custom-class {
+    @apply bg-red-600 text-white text-2xl 
+ }
+
+
+
+</style>
